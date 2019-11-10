@@ -98,8 +98,8 @@
         android:layout_height="wrap_content"
         android:text="@string/tvSensitivityLabel"
         android:textSize="15sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText6"
-        app:layout_constraintEnd_toStartOf="@+id/editText6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etSensitivityInput"
+        app:layout_constraintEnd_toStartOf="@+id/etSensitivityInput"
         app:layout_constraintStart_toStartOf="@+id/tvEmailLabel" />
 
     <Button
@@ -118,7 +118,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/etSensitivityInput"
         android:layout_width="180dp"
         android:layout_height="42dp"
         android:layout_marginStart="8dp"
