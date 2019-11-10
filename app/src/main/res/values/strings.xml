@@ -2,13 +2,7 @@
     <string name="app_name">DTrack</string>
     <string name="title_activity_settings">Settings</string>
 
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
 
     <!-- Settings Screen strings -->
     <string name="attachment_summary_off">Only download attachments when manually requested</string>

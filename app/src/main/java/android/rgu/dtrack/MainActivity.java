@@ -2,10 +2,15 @@ package android.rgu.dtrack;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 import android.view.MenuInflater;
+import android.view.MenuItem;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,4 +29,18 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.settings_menu, menu);
         return true;
     }
+
+    // on click listener for menu item
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        int id = item.getItemId();
+        if (id == R.id.item_settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            this.startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
