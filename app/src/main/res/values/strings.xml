@@ -3,14 +3,19 @@
     <string name="title_activity_settings">Settings</string>
 
 
-
     <!-- Settings Screen strings -->
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="tvFirstName">Name</string>
-    <string name="etFirstName">Enter first name</string>
-    <string name="tvLastNameLabel">Last Name</string>
-    <string name="etLastName">Enter last name</string>
-    <string name="tvEmailLabel">Email</string>
-    <string name="tvSensitivityLabel">Sensitivity Factor</string>
+   <string name="tvHelloText">Hello! Please enter your Sensitivity Factor below</string>
+    <string name="tvSensitivityLabel">Sensitivity Factor:</string>
     <string name="bnSave">SAVE</string>
+    <string name="tvSettings">Settings</string>
+
+    <!-- Shared Preferences strings -->
+    <string name="tvDiabetesTypeLabel">Choose Diabetes Type:</string>
+    <string-array name="spinnerForDiabetesType">
+        <item>Diabetes Type 1</item>
+        <item>Diabetes Type 2</item>
+    </string-array>
+    <string name="shared_prefs_file" translatable="false">android.rgu.dtrack</string>
+    <string name="shared_prefs_diabetesType" translatable="false">diabetesType</string>
+    <string name="shared_prefs_sensitivityFactor" translatable="false">factor</string>
 </resources>

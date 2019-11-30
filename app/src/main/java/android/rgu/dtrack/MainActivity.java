@@ -36,7 +36,9 @@ public class MainActivity extends AppCompatActivity {
         // Handle item selection
         int id = item.getItemId();
         if (id == R.id.item_settings) {
+            // create intent
             Intent intent = new Intent(this, SettingsActivity.class);
+            // start settings activity
             this.startActivity(intent);
             return true;
         }
