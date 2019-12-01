@@ -2,6 +2,7 @@ package android.rgu.dtrack;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,12 +13,22 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
+    private CardView cvAddReadings, correction_calculator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // defining card views
+        cvAddReadings = findViewById(R.id.add_readings);
+        correction_calculator = findViewById(R.id.correction_calculator);
+
+        // adding Click listeners to the cards
+        cvAddReadings.setOnClickListener(this);
+        correction_calculator.setOnClickListener(this);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -45,4 +56,18 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.add_readings) {
+            // create an Intent to start AddReadingActivity
+            Intent intent = new Intent(getApplicationContext(), AddReadingActivity.class);
+            // start the activity
+            startActivity(intent);
+        } else if (view.getId() == R.id.correction_calculator) {
+            Intent intent = new Intent(getApplicationContext(), CalculatorActivity.class);
+            // start the activity
+            startActivity(intent);
+        }
+
+    }
 }

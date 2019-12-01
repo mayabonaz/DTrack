@@ -10,7 +10,7 @@
     <string name="correction_calculator_subtitle">Ensure you have entered your Sensitivity Factor at Settings</string>
 
     <!-- Settings Screen strings -->
-   <string name="tvHelloText">Insulin Sensitivity Factor is individual to every person. Your doctor can help you to calculate your Sensitivity Factor.</string>
+    <string name="tvHelloText">Insulin Sensitivity Factor is individual to every person. Your doctor can help you to calculate your Sensitivity Factor.</string>
     <string name="tvSensitivityLabel">Sensitivity Factor:</string>
     <string name="bnSave">SAVE</string>
     <string name="tvSettings">Settings</string>
