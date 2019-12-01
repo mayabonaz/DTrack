@@ -2,6 +2,12 @@
     <string name="app_name">DTrack</string>
     <string name="title_activity_settings">Settings</string>
 
+    <!-- Main Screen strings -->
+    <string name="tvTest">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero book.</string>
+    <string name="add_readings_title">Record Test Results</string>
+    <string name="add_readings_subtitle">Record your daily blood test results</string>
+    <string name="correction_calculator_title">Calculate Insulin Correction Dose</string>
+    <string name="correction_calculator_subtitle">Ensure you have entered your Sensitivity Factor at Settings</string>
 
     <!-- Settings Screen strings -->
    <string name="tvHelloText">Insulin Sensitivity Factor is individual to every person. Your doctor can help you to calculate your Sensitivity Factor.</string>
