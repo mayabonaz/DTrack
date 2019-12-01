@@ -4,7 +4,7 @@
 
 
     <!-- Settings Screen strings -->
-   <string name="tvHelloText">Hello! Please enter your Sensitivity Factor below</string>
+   <string name="tvHelloText">Insulin Sensitivity Factor is individual to every person. Your doctor can help you to calculate your Sensitivity Factor.</string>
     <string name="tvSensitivityLabel">Sensitivity Factor:</string>
     <string name="bnSave">SAVE</string>
     <string name="tvSettings">Settings</string>
@@ -18,4 +18,7 @@
     <string name="shared_prefs_file" translatable="false">android.rgu.dtrack</string>
     <string name="shared_prefs_diabetesType" translatable="false">diabetesType</string>
     <string name="shared_prefs_sensitivityFactor" translatable="false">factor</string>
+    <string name="factorSavedMsg">Your entry is saved</string>
+    <string name="sensitivityHint">Enter integer</string>
+    <string name="tvPromptTxt">Please enter your Sensitivity Factor below</string>
 </resources>

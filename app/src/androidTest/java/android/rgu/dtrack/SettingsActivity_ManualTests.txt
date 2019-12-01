@@ -1,0 +1,17 @@
+1. Test purpose: Check if all UI components displayed correctly.
+    Action: Click options menu Settings option.
+    Expected result: All UI components are displayed correctly.
+    Passed: Yes
+    Actual result: as expected.
+
+2. Test purpose: Check if SettingsActivity screen will displayed correctly when screen rotated.
+    Action: Click horizontal view icon.
+    Expected result: SettingsActivity displayed on the horizontal view.
+    Passed: Yes
+    Actual result: as expected.
+
+3. Test purpose: Check if shared preference is saved when app closed and reopened.
+   Action: Enter Sensitivity Factor value 2.
+   Expected result: Edit text field displayed last entered value correctly.
+   Passed: Yes
+   Actual result: as expected.

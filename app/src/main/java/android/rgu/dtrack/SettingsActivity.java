@@ -2,15 +2,11 @@ package android.rgu.dtrack;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.widget.Toolbar;
-import android.view.Menu;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -20,16 +16,10 @@ import android.widget.Toast;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    private static final String TAG = SettingsActivity.class.getCanonicalName();
-
-    private static final String sharedPrefFile = "android.rgu.dtrack";
+    //private static final String TAG = SettingsActivity.class.getCanonicalName();
     //private SharedPreferences sharedPrefs;
     // Shared Preferences for storing the settings
     private EditText etSensitivityInput;
-    private Button bnSave;
-
-//    public static final String FACTOR = "factor";
-//    private String factorOutput;
 
 
     @Override
@@ -46,7 +36,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         // initialising views onCreate
         etSensitivityInput = findViewById(R.id.etSensitivityInput);
-        bnSave = findViewById(R.id.bnSave);
+        Button bnSave = findViewById(R.id.bnSave);
 
         // setting onClick listener to Save button
         bnSave.setOnClickListener(new View.OnClickListener() {
@@ -54,9 +44,17 @@ public class SettingsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // instantiating SharedPreferences
                 SharedPreferences sharedPrefs = getSharedPreferences("MyShared", MODE_PRIVATE);
+
+                // get the shared preference editor
                 SharedPreferences.Editor myEditor = sharedPrefs.edit();
+
+                // store input as a value of the key - factor
                 myEditor.putInt("factor",Integer.parseInt(etSensitivityInput.getText().toString()));
+
+                // apply the edits to shared preferences
                 myEditor.apply();
+                // Display confirmation message
+                Toast.makeText(getApplicationContext(),getString(R.string.factorSavedMsg), Toast.LENGTH_LONG).show();
 
             }
         });
@@ -82,6 +80,8 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
+
+        // loading the shared preferences data
         SharedPreferences sharedPrefs1 = getSharedPreferences("MyShared", MODE_PRIVATE);
         int myfactor = sharedPrefs1.getInt("factor", 0);
 
