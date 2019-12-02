@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CalculatorActivity"></activity>
+        <activity
+            android:name=".CalculatorActivity"
+            android:label="@string/title_activity_calculator">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name="AddReadingActivity"></activity>
         <activity
             android:name=".SettingsActivity"
