@@ -10,15 +10,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 
-import android.os.Bundle;
 
 public class CalculatorActivity extends AppCompatActivity {
     // defining global variables
     // variable targetNum, bloodTestNum, sensitivityNum for input numbers
     EditText targetNum, bloodTestNum, sensitivityNum;
     TextView moreInfo, result;
-
-    int answer = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,15 +30,18 @@ public class CalculatorActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // get edit text
-        targetNum = (EditText) findViewById(R.id.etTargetGlucose);
-        bloodTestNum = (EditText) findViewById(R.id.etGlucoseTestResult);
-        sensitivityNum = (EditText) findViewById(R.id.etSensitivityFactor);
-        moreInfo = (TextView) findViewById(R.id.tvMoreInfo);
-        result = (TextView) findViewById(R.id.tvCalcResult);
+        targetNum = findViewById(R.id.etTargetGlucose);
+        bloodTestNum = findViewById(R.id.etGlucoseTestResult);
+        sensitivityNum = findViewById(R.id.etSensitivityFactor);
+        moreInfo = findViewById(R.id.tvMoreInfo);
+        result = findViewById(R.id.tvCalcResult);
 
-        // open link
+        // assigning link URL to linText variale
         String linkText = "More info <a href='https://www.digibete.org/essentials/'>here</a>";
+
+        // making text clickable
         moreInfo.setText(Html.fromHtml(linkText));
+        // launch URL when clicked on text
         moreInfo.setMovementMethod(LinkMovementMethod.getInstance());
 
 
@@ -62,8 +62,11 @@ public class CalculatorActivity extends AppCompatActivity {
                 // perform calculation store it in corrDose variable
                 double corrDose = (num2 - num1) / num3;
 
-                // set it to result textview
-                result.setText(Double.toString(corrDose));
+                // creating string from calculation result and insulin unit
+                String s = Double.toString(corrDose) + " " + getString(R.string.unit);
+
+                // setting calculation result string to result Text View
+                result.setText(s);
             }
 
         });
