@@ -16,10 +16,11 @@
     <string name="tvSettings">Settings</string>
 
     <!-- Calculator screen strings -->
-    <string name="title_activity_calculator">Calculator</string>
+    <string name="title_activity_calculator">Insulin Correction Calculator</string>
     <string name="tvCalculateLabel">Correction Calculator</string>
     <string name="tvThingsToKnowLabel">Things you will need to know:</string>
     <string name="tvToKnowList">-Target blood glucose level\n-Most recent Blood glucose test result\n-Current sensitivity factor</string>
+    <string name="tvMoreInfo">More info</string>
     <string name="etTargetGlucose">Enter Target Blood Glucose level</string>
     <string name="etGlucoseTestResult">Enter Blood Test result</string>
     <string name="etSensitivityFactor">Enter sensitivity factor</string>
