@@ -2,16 +2,8 @@ package android.rgu.dtrack;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-
-
-/**
- * Implementation for the Add Blood test record screen
- */
-
 
 public class AddReadingActivity extends AppCompatActivity {
 
@@ -26,6 +18,7 @@ public class AddReadingActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
     }
 }

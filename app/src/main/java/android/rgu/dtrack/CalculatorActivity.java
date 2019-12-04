@@ -36,7 +36,7 @@ public class CalculatorActivity extends AppCompatActivity {
         moreInfo = findViewById(R.id.tvMoreInfo);
         result = findViewById(R.id.tvCalcResult);
 
-        // assigning link URL to linText variale
+        // assigning link URL to linText variable
         String linkText = "More info <a href='https://www.digibete.org/essentials/'>here</a>";
 
         // making text clickable
