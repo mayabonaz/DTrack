@@ -15,6 +15,13 @@
     <string name="bnSave">SAVE</string>
     <string name="tvSettings">Settings</string>
 
+    <!-- AddReadingActivity strings -->
+    <string name="title_activity_addReadingActivity">Record Blood Test Results</string>
+
+
+    <!-- ReadingAdapter -->
+    <string name="testTitle">Blood Test</string>
+
     <!-- Calculator screen strings -->
     <string name="title_activity_calculator">Insulin Correction Calculator</string>
     <string name="tvCalculateLabel">Correction Calculator</string>
@@ -29,7 +36,6 @@
     <string name="btnCalculate">CALCULATE</string>
 
 
-
     <!-- Shared Preferences strings -->
     <string name="tvDiabetesTypeLabel">Choose Diabetes Type:</string>
     <string-array name="spinnerForDiabetesType">
@@ -42,4 +48,5 @@
     <string name="factorSavedMsg">Your entry is saved</string>
     <string name="sensitivityHint">Enter integer</string>
     <string name="tvPromptTxt">Please enter your Sensitivity Factor below</string>
+    <string name="title_activity_record_test">RecordTestActivity</string>
 </resources>
