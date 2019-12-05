@@ -7,7 +7,8 @@
     <string name="add_readings_title">Record Test Results</string>
     <string name="add_readings_subtitle">Record your daily blood test results</string>
     <string name="correction_calculator_title">Calculate Insulin Correction Dose</string>
-    <string name="correction_calculator_subtitle">Ensure you have entered your Sensitivity Factor at Settings</string>
+    <string name="correction_calculator_subtitle">Ensure you know your Glucose Sensitivity Factor</string>
+    <string name="btnFindPharmacy">Find Pharmacy</string>
 
     <!-- Settings Screen strings -->
     <string name="tvHelloText">Insulin Sensitivity Factor is individual to every person. Your doctor can help you to calculate your Sensitivity Factor.</string>
@@ -17,10 +18,17 @@
 
     <!-- AddReadingActivity strings -->
     <string name="title_activity_addReadingActivity">Record Blood Test Results</string>
+    <string name="tvPermissionDetails">DTrack needs permission to access device location to provide required services.</string>
+    <string name="btnPermission">Grant Permissions</string>
 
 
-    <!-- ReadingAdapter -->
-    <string name="testTitle">Blood Test</string>
+    <!-- Permission Screen strings -->
+    <string name="tvPermissionTitle">Permissions Request</string>
+
+    <!-- Map Activity strings -->
+    <!--  <string name="title_activity_map">MapActivity</string> -->
+    <string name="google_maps_api">AIzaSyDzsibi7KNCZQNDJHqwVybXOZuiha9GfxE</string>
+    <string name="btn_find">Find</string>
 
     <!-- Calculator screen strings -->
     <string name="title_activity_calculator">Insulin Correction Calculator</string>
@@ -38,10 +46,6 @@
 
     <!-- Shared Preferences strings -->
     <string name="tvDiabetesTypeLabel">Choose Diabetes Type:</string>
-    <string-array name="spinnerForDiabetesType">
-        <item>Diabetes Type 1</item>
-        <item>Diabetes Type 2</item>
-    </string-array>
     <string name="shared_prefs_file" translatable="false">android.rgu.dtrack</string>
     <string name="shared_prefs_diabetesType" translatable="false">diabetesType</string>
     <string name="shared_prefs_sensitivityFactor" translatable="false">factor</string>
@@ -49,4 +53,5 @@
     <string name="sensitivityHint">Enter integer</string>
     <string name="tvPromptTxt">Please enter your Sensitivity Factor below</string>
     <string name="title_activity_record_test">RecordTestActivity</string>
+    <string name="title_activity_map">MapActivity</string>
 </resources>

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.view.MenuInflater;
@@ -16,6 +17,7 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private CardView cvAddReadings, correction_calculator;
+    private Button myButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +28,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cvAddReadings = findViewById(R.id.add_readings);
         correction_calculator = findViewById(R.id.correction_calculator);
 
+        // define button
+        myButton = findViewById(R.id.button);
+
         // adding Click listeners to the cards
         cvAddReadings.setOnClickListener(this);
         correction_calculator.setOnClickListener(this);
+        myButton.setOnClickListener(this);
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -66,6 +73,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (view.getId() == R.id.correction_calculator) {
             Intent intent = new Intent(getApplicationContext(), CalculatorActivity.class);
             // start the activity
+            startActivity(intent);
+        } else if (view.getId() == R.id.button) {
+            // create and intent to start Permissions Activity to launch MapActivity
+            Intent intent = new Intent(getApplicationContext(), GetPermissionsActivity.class);
             startActivity(intent);
         }
 
