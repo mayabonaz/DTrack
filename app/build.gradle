@@ -5,7 +5,7 @@ android {
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "android.rgu.dtrack"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -22,6 +22,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+}
+
+repositories {
+    mavenCentral()
 }
 
 dependencies {
@@ -49,6 +53,20 @@ dependencies {
     annotationProcessor "androidx.room:room-compiler:$room_version"
     // Test helpers
     testImplementation "androidx.room:room-testing:$room_version"
+
+    // google services dependencies
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.google.android.libraries.places:places:1.1.0'
+
+    // third party libraries
+    implementation 'com.karumi:dexter:5.0.0'
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.1'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:2.0.3'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.2@aar'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.iammert:ReadableBottomBar:0.2'
 
 
 }
