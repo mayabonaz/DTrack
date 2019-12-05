@@ -21,6 +21,13 @@
     <string name="tvPermissionDetails">DTrack needs permission to access device location to provide required services.</string>
     <string name="btnPermission">Grant Permissions</string>
 
+    <!-- RecordTestActivity strings -->
+    <string name="test_title">Blood Test: </string>
+    <string name="test_date">04 Dec 2019 at 12:30 PM </string>
+    <string name="test_note_sample">15</string>
+    <string name="test_note">A note for the blood test...</string>
+    <string name="tvNoReadings">No Entries</string>
+
 
     <!-- Permission Screen strings -->
     <string name="tvPermissionTitle">Permissions Request</string>

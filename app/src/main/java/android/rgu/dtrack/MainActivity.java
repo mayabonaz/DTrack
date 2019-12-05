@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId() == R.id.add_readings) {
             // create an Intent to start AddReadingActivity
-            Intent intent = new Intent(getApplicationContext(), AddReadingActivity.class);
+            Intent intent = new Intent(getApplicationContext(), RecordTestActivity.class);
             // start the activity
             startActivity(intent);
         } else if (view.getId() == R.id.correction_calculator) {

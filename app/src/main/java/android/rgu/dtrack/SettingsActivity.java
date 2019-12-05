@@ -16,11 +16,10 @@ import android.widget.Toast;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    //private static final String TAG = SettingsActivity.class.getCanonicalName();
-    //private SharedPreferences sharedPrefs;
+    private static final String TAG = SettingsActivity.class.getCanonicalName();
+
     // Shared Preferences for storing the settings
     private EditText etSensitivityInput;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,11 +68,10 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
 
-    // Saving shard prefs on pause state
+    // Saving shared prefs on pause state
     @Override
     protected void onPause() {
         super.onPause();
-
     }
 
     // Loading shared prefs onResume state

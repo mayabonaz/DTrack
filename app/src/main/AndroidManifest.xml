@@ -14,16 +14,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDzsibi7KNCZQNDJHqwVybXOZuiha9GfxE" />
 
+        <activity
+            android:name=".RecordTestActivity"
+            android:label="@string/title_activity_addReadingActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <activity
             android:name=".MapActivity"
             android:label="@string/title_activity_map"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".GetPermissionsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -59,7 +66,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+        </activity>
     </application>
 
 </manifest>
