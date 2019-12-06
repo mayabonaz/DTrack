@@ -31,6 +31,7 @@
 
     <!-- Permission Screen strings -->
     <string name="tvPermissionTitle">Permissions Request</string>
+    <string name="title_activity_permissions">Permissions</string>
 
     <!-- Map Activity strings -->
     <!--  <string name="title_activity_map">MapActivity</string> -->

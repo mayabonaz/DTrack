@@ -47,13 +47,40 @@ public class SettingsActivity extends AppCompatActivity {
                 // get the shared preference editor
                 SharedPreferences.Editor myEditor = sharedPrefs.edit();
 
+                //convert to Integer type
                 // store input as a value of the key - factor
                 myEditor.putInt("factor",Integer.parseInt(etSensitivityInput.getText().toString()));
 
-                // apply the edits to shared preferences
-                myEditor.apply();
-                // Display confirmation message
-                Toast.makeText(getApplicationContext(),getString(R.string.factorSavedMsg), Toast.LENGTH_LONG).show();
+                if ("".equals(myEditor)) {
+                    Toast.makeText(getApplicationContext(), getString(R.string.toastText), Toast.LENGTH_LONG).show();
+                } else {
+                    // apply the edits to shared preferences
+                    myEditor.apply();
+
+                    // Display confirmation message
+                    Toast.makeText(getApplicationContext(),getString(R.string.factorSavedMsg), Toast.LENGTH_LONG).show();
+                }
+
+
+
+/*                try
+                {
+                    // convert to Integer type
+                    // store input as a value of the key - factor
+                    myEditor.putInt("factor",Integer.parseInt(etSensitivityInput.getText().toString()));
+
+                    // apply the edits to shared preferences
+                    myEditor.apply();
+
+                    // Display confirmation message
+                    Toast.makeText(getApplicationContext(),getString(R.string.factorSavedMsg), Toast.LENGTH_LONG).show();
+                }
+                catch (NumberFormatException ex)
+                {
+                    Toast.makeText(getApplicationContext(), getString(R.string.toastText), Toast.LENGTH_LONG).show();
+
+                }*/
+
 
             }
         });

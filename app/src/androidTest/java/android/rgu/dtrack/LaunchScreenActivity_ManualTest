@@ -1,0 +1,18 @@
+
+Test purpose: check if all UI elements are available and displayed correctly
+Action: start the app, examine the screen
+Expected result: launch screen launches, all view elements are available and displayed in correct positions
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if screen works when device rotated
+Action: launch the app in a horizontal device position
+Expected result: launch screen displays in a horizontal view, starts without errors
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if exit rotes are available for the user and working correctly
+Action: launch the app, click back button of the device immediately
+Expected result: the app exits
+Passed: Yes
+Actual result: As expected

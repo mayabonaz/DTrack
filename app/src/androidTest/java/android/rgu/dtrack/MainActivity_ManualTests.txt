@@ -1,59 +1,60 @@
-1. Test purpose: check if app will install without any issues
+   Test purpose: check if app will install without any issues
    Action: click on Run app button on Android Studio
    Expected result: App installs and launch screen starts, main screen loads.
    Passed: Yes
    Actual result: As expected
 
-2. Test purpose: Check if Intent works to launch SettingsActivity when selected from options menu.
-   Action: Click options menu Settings option.
+   Test purpose: Check if Intent works to launch SettingsActivity when selected from options menu.
+   Action: Click options menu, Settings option.
    Expected result: SettingsActivity launches.
    Passed: Yes
    Actual result: as expected.
 
-3. Test purpose: check parent-child navigation from SettingsActivity to MainActivity
-   Action: click on the top left arrow navigation in the navigation bar of the app
-   Expected result: MainActivity is displayed
+   Test purpose: check if all views are on their positions and displayed properly
+   Action: launch the app, examine the main screen
+   Expected result: all view elements are available and displayed correctly
    Passed: Yes
    Actual result: As expected
 
-   Test purpose:
-   Action:
-   Expected result:
+   Test purpose: check if all views are working properly and clickable
+   Action: launch the app, click on card views, button and settings option
+   Expected result: all view elements are clickable and working correctly
    Passed: Yes
    Actual result: As expected
 
-   Test purpose:
-   Action:
-   Expected result:
+   Test purpose: check if Record Test Results screen launches when Record Test Results view is clicked
+   Action: launch the app, select the Record Test Results view
+   Expected result: correct activity starts
    Passed: Yes
    Actual result: As expected
 
-   Test purpose:
-   Action:
-   Expected result:
+   Test purpose: check if Correction Calculator screen launches when Calculate Insulin Correction Dose view is clicked
+   Action: launch the app, select the Calculate Insulin Correction Dose view
+   Expected result: correct activity starts
    Passed: Yes
    Actual result: As expected
 
-   Test purpose:
-   Action:
-   Expected result:
+   Test purpose: check is Find Pharmacy button start permissions activity
+   Action: launch the app, click Find Pharmacy button
+   Expected result: Permission screen starts, displaying correct view
    Passed: Yes
    Actual result: As expected
 
-   Test purpose:
-   Action:
-   Expected result:
+   Test purpose: check if main screen works when rotated
+   Action: launch the app, when the main screen starts, rotate the emulator's screen
+   Expected result: main screen displays in a horizontal view, all elements available, in correct positions with correct padding
    Passed: Yes
    Actual result: As expected
 
-   Test purpose:
-   Action:
-   Expected result:
+   Test purpose: check if exit rotes are available for user and working correctly
+   Action: launch the app, when the main screen starts, click back button of the device
+   Expected result: the app exits
    Passed: Yes
    Actual result: As expected
 
-    Test purpose: check if app will uninstall without issues
-    Action: click on Settings of the android emulator device. Find DTrack in Apps and select it. From options select uninstall.
-    Expected result: The app uninstalls.
-    Passed: Yes
-    Actual result: As expected
+
+   Test purpose: check if app will uninstall without issues
+   Action: click on Settings of the android emulator device. Find DTrack in Apps and select it. From options select uninstall.
+   Expected result: The app uninstalls.
+   Passed: Yes
+   Actual result: As expected

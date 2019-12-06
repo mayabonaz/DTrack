@@ -4,6 +4,12 @@ Expected result: Calculator screen starts and all fields available and displayed
 Passed: Yes
 Actual result: As expected
 
+Test purpose: check if all mandatory fields are working properly and accepts inputs
+Action: From the main screen select Calculate Insulin Correction Dose card view, click on input fields and enter values
+Expected result: Calculator screen starts and all fields available and displayed correctly.
+Passed: Yes
+Actual result: As expected
+
 Test purpose: check if external link opens a website on the device's internet browser.
 Action: click on the highlighted text
 Expected result: an internet browser displays the website correctly.
@@ -11,7 +17,7 @@ Passed: Yes
 Actual result: As expected
 
 Test purpose: check if app returns to main screen when arrow on the toolbar is selected
-Action: select an arrow on the top left
+Action: from the calculator screen, select an arrow on the top left
 Expected result: the activity is returned to the main screen
 Passed: Yes
 Actual result: As expected
@@ -59,7 +65,13 @@ Passed: Yes
 Actual result: As expected
 
 Test purpose: check if calculator screen handles calculate button click on empty input fields
-Action: start calculator screen, and click Calculate button
-Expected result: the app should not crash
+Action: start calculator screen, click Calculate button
+Expected result: the app should not crash and display input prompt message
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if exit rotes are available for user and working correctly
+Action: launch the app, from calculator screen click back button of the device twice
+Expected result: the app exits
 Passed: Yes
 Actual result: As expected

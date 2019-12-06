@@ -1,0 +1,29 @@
+Test purpose: Check if all UI components displayed correctly.
+Action: launch app and click on Find Pharmacy button on the main screen.
+Expected result: Permissions screen displayed with all UI components are displayed and correctly positioned
+Passed: Yes
+Actual result: as expected.
+
+Test purpose: check parent-child navigation from GetPermissionsActivity to MainActivity
+Action: from the GetPermissions activity, click on the top left arrow navigation in the navigation bar of the app, repeat test with device back button
+Expected result: MainActivity is displayed
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if app works when rotated
+Action: launch the app, when the Permission screen starts, rotate the emulator's screen
+Expected result: permissions screen displays in a horizontal view, all elements available, in correct positions with correct padding
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if app launches MapActivity when permission is granted
+Action: launch the app, when the Permission screen starts, click Grant Permissions screen
+Expected result: permission prompt displayed to the user offering allow or deny options. When allow selected, MapActivity starts
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if app launches MapActivity when permission is denied
+Action: launch the app, when the Permission screen starts, click Grant Permissions screen, click deny option
+Expected result: permission prompt displayed to the user offering allow or deny options. When deny option selected, "Permissions Denied" message displays, MapActivity does not launch
+Passed: Yes
+Actual result: As expected

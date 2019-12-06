@@ -1,0 +1,24 @@
+   Test purpose: check if all views are on their positions and displayed properly
+   Action: launch the app, from main screen click Record Test Results view, examine
+   Expected result: screen label, back arrow and floating button available and displayed correctly
+   Passed: Yes
+   Actual result: As expected
+
+   Test purpose: check if all views are working properly and clickable
+   Action: launch the app, from main screen click Record Test Results view, click on Floating button
+   Expected result: a screen with input fields displayed
+   Passed: No
+   Actual result: add button is not clickable
+
+   Test purpose: check if Record Test Results screen displays horizontally when device rotated
+   Action: launch the app, when the main Record Test Results screen starts, rotate the emulator's screen
+   Expected result: Record Test Results screen displays in a horizontal view, all elements available, in correct positions with correct padding
+   Passed: Yes
+   Actual result: As expected
+
+   Test purpose: check if exit rotes are available for user and working correctly
+   Action: launch the app, when the main Record Test screen starts, click back button of the device, repeat test with back arrow
+   Expected result: the app exits
+   Passed: Yes
+   Actual result: As expected
+

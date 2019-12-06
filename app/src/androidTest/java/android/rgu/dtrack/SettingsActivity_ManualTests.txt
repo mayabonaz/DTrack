@@ -1,47 +1,47 @@
-1. Test purpose: Check if all UI components displayed correctly.
+    Test purpose: Check if all UI components displayed correctly.
     Action: Click options menu Settings option.
     Expected result: All UI components are displayed correctly.
     Passed: Yes
     Actual result: as expected.
 
-2. Test purpose: Check if SettingsActivity screen will displayed correctly when screen rotated.
-    Action: Click horizontal view icon.
+    Test purpose: Check if SettingsActivity screen will displayed correctly when screen rotated.
+    Action: launch the app, go to Settings screen, click horizontal view on the emulator.
     Expected result: SettingsActivity displayed on the horizontal view.
     Passed: Yes
     Actual result: as expected.
 
-3. Test purpose: Check if shared preference is saved when app closed and reopened.
+   Test purpose: Check if shared preference is saved when app closed and reopened.
    Action: Enter Sensitivity Factor value 2.
    Expected result: Edit text field displayed last entered value correctly.
    Passed: Yes
    Actual result: as expected.
 
-   Test purpose:
-   Action:
-   Expected result:
+   Test purpose: check parent-child navigation from SettingsActivity to MainActivity
+   Action: click on the top left arrow navigation in the navigation bar of the app, repeat test with device back button
+   Expected result: MainActivity is displayed
    Passed: Yes
    Actual result: As expected
 
-   Test purpose:
-   Action:
-   Expected result:
+  Test purpose: check if Sensitivity Factor input is saved in Shared Preferences
+  Action: launch app, navigate to Settings screen and enter input 2, exit app and launch again
+  Expected result: input 2 must be available on Sensitivity Factor field
+  Passed: Yes
+  Actual result: As expected
+
+   Test purpose: check if NumberFormatException handled
+   Action: start the Settings activity and click save button on empty edit text field
+   Expected result: display message prompting user to enter input to edit text field
+   Passed: No
+   Actual result: the app crashes
+
+   Test purpose: check if input field accepts characters
+   Action: start Settings activity, enter letters
+   Expected result: input field should not allow character inputs
    Passed: Yes
    Actual result: As expected
 
-   Test purpose:
-   Action:
-   Expected result:
-   Passed: Yes
-   Actual result: As expected
-
-   Test purpose:
-   Action:
-   Expected result:
-   Passed: Yes
-   Actual result: As expected
-
-   Test purpose:
-   Action:
-   Expected result:
+   Test purpose: check if exit rotes are available and working
+   Action: launch the app, when the main screen starts, click settings option, from settings screen click back button of the device
+   Expected result: the app return to the main screen
    Passed: Yes
    Actual result: As expected
