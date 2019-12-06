@@ -376,7 +376,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
                             }
                         } else {
-                            Toast.makeText(MapActivity.this, "Unable to get last location", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MapActivity.this, "Unable to get device last location", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
