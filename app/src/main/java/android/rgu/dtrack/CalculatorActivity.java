@@ -2,20 +2,23 @@ package android.rgu.dtrack;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.text.TextWatcher;
 import androidx.appcompat.widget.Toolbar;
 
 
 public class CalculatorActivity extends AppCompatActivity {
     // defining global variables
     // variable targetNum, bloodTestNum, sensitivityNum for input numbers
-    EditText targetNum, bloodTestNum, sensitivityNum;
-    TextView moreInfo, result;
+    private EditText targetNum, bloodTestNum, sensitivityNum;
+    private TextView moreInfo, result;
+    private Button calcButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,12 @@ public class CalculatorActivity extends AppCompatActivity {
         moreInfo = findViewById(R.id.tvMoreInfo);
         result = findViewById(R.id.tvCalcResult);
 
+        //
+        targetNum.addTextChangedListener(inputWatcher);
+        bloodTestNum.addTextChangedListener(inputWatcher);
+        sensitivityNum.addTextChangedListener(inputWatcher);
+
+
         // assigning link URL to linText variable
         String linkText = "More info <a href='https://www.digibete.org/essentials/'>here</a>";
 
@@ -45,16 +54,12 @@ public class CalculatorActivity extends AppCompatActivity {
         moreInfo.setMovementMethod(LinkMovementMethod.getInstance());
 
 
-
         // get the Calculate button
-        Button calcButton = findViewById(R.id.btnCalculate);
+        calcButton = findViewById(R.id.btnCalculate);
 
         // set the click listener to Calculate button
         calcButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
-
-
                 // get data which is in edit text, convert it to string
                 // using parse Integer convert it to Integer type
                 int num1 = Integer.parseInt(targetNum.getText().toString());
@@ -73,4 +78,30 @@ public class CalculatorActivity extends AppCompatActivity {
 
         });
     }
+
+    // Textchange listener for all edit text fields
+    private TextWatcher inputWatcher = new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+            String targetNumInput = targetNum.getText().toString().trim();
+            String bloodTestNumInput = bloodTestNum.getText().toString().trim();
+            String sensitivityNumInput = sensitivityNum.getText().toString().trim();
+
+            // enable calculate button only if edit texts are not empty, 
+            calcButton.setEnabled(!targetNumInput.isEmpty() && !bloodTestNumInput.isEmpty() && !sensitivityNumInput.isEmpty());
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+        }
+    };
 }
+
+
