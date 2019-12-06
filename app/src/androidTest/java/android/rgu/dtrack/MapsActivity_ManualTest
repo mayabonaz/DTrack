@@ -1,42 +1,37 @@
-Test purpose:
-Action:
-Expected result:
+Test purpose: check if device location is displayed when MapActivity starts
+Action: launch app, click Find Pharmacy button, allow permissions, examine
+Expected result: MapActivity launches, user's location is displayed on the screen
+Passed: Yes
+Actual result: as expected.
+
+Test purpose: check if all views are on their positions and displayed properly
+Action: launch app, click Find Pharmacy button, examine the main screen UI component of MapActivity
+Expected result: all view elements are available and displayed correctly
 Passed: Yes
 Actual result: As expected
 
-Test purpose:
-Action:
-Expected result:
+Test purpose: check Find button is working properly and clickable
+Action: launch the MapActivity, enter "pharmacies near Aberdeen" and click on Find button
+Expected result: Find button is clickable, the app offers search suggestions, when "pharmacies near Aberdeen" suggestion selected, google browser displays a list of pharmacies with the closest one displayed on the top.
 Passed: Yes
 Actual result: As expected
 
-Test purpose:
-Action:
-Expected result:
+Test purpose: check if google map launches and user can navigate to destination
+Action: launch the MapActivity, enter "pharmacies near Aberdeen" and click on Find button, select the top result, click navigate
+Expected result: google map should launch shoving navigation map to the selected place
 Passed: Yes
 Actual result: As expected
 
-Test purpose:
-Action:
-Expected result:
+Test purpose: check if exit rotes are available for user and working correctly
+Action: from MapActivity click back button of the device
+Expected result: the screen returns to previous activity
 Passed: Yes
 Actual result: As expected
 
-Test purpose:
-Action:
-Expected result:
+Test purpose: check if search offer correct spelling when search input is misspelled
+Action: from MapActivity enter "cler pharmacy aberdeen"
+Expected result: correctly spelled pharmacy name is displayed as a suggestion
 Passed: Yes
 Actual result: As expected
 
-Test purpose:
-Action:
-Expected result:
-Passed: Yes
-Actual result: As expected
-
-Test purpose:
-Action:
-Expected result:
-Passed: Yes
-Actual result: As expected
 
