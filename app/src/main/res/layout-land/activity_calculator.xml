@@ -51,6 +51,16 @@
                 android:text="@string/tvToKnowList"
                 android:layout_marginTop="10dp"/>
 
+            <TextView
+                android:id="@+id/tvMoreInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMoreInfo"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginRight="15dp"/>
+
             <EditText
                 android:id="@+id/etTargetGlucose"
                 android:layout_width="match_parent"

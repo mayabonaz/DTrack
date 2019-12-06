@@ -1,11 +1,59 @@
-Test purpose: Check if Intent works to launch SettingsActivity when selected from options menu.
-Action: Click options menu Settings option.
-Expected result: SettingsActivity launches.
-Passed: Yes
-Actual result: as expected.
+1. Test purpose: check if app will install without any issues
+   Action: click on Run app button on Android Studio
+   Expected result: App installs and launch screen starts, main screen loads.
+   Passed: Yes
+   Actual result: As expected
 
-Test purpose: check parent-child navigation from SettingsActivity to MainActivity
-Action: click on the top left arrow navigation in the navigation bar of the app
-Expected result: MainActivity is displayed
-Passed: Yes
-Actual result: As expected
+2. Test purpose: Check if Intent works to launch SettingsActivity when selected from options menu.
+   Action: Click options menu Settings option.
+   Expected result: SettingsActivity launches.
+   Passed: Yes
+   Actual result: as expected.
+
+3. Test purpose: check parent-child navigation from SettingsActivity to MainActivity
+   Action: click on the top left arrow navigation in the navigation bar of the app
+   Expected result: MainActivity is displayed
+   Passed: Yes
+   Actual result: As expected
+
+   Test purpose:
+   Action:
+   Expected result:
+   Passed: Yes
+   Actual result: As expected
+
+   Test purpose:
+   Action:
+   Expected result:
+   Passed: Yes
+   Actual result: As expected
+
+   Test purpose:
+   Action:
+   Expected result:
+   Passed: Yes
+   Actual result: As expected
+
+   Test purpose:
+   Action:
+   Expected result:
+   Passed: Yes
+   Actual result: As expected
+
+   Test purpose:
+   Action:
+   Expected result:
+   Passed: Yes
+   Actual result: As expected
+
+   Test purpose:
+   Action:
+   Expected result:
+   Passed: Yes
+   Actual result: As expected
+
+    Test purpose: check if app will uninstall without issues
+    Action: click on Settings of the android emulator device. Find DTrack in Apps and select it. From options select uninstall.
+    Expected result: The app uninstalls.
+    Passed: Yes
+    Actual result: As expected

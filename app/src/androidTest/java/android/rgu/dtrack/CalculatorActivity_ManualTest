@@ -1,0 +1,59 @@
+Test purpose: check if all mandatory fields are displayed
+Action: From the main screen select Calculate Insulin Correction Dose card view
+Expected result: Calculator screen starts and all fields available and displayed correctly.
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if external link opens a website on the device's internet browser.
+Action: click on the highlighted text
+Expected result: an internet browser displays the website correctly.
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if app returns to main screen when arrow on the toolbar is selected
+Action: select an arrow on the top left
+Expected result: the activity is returned to the main screen
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if calculator screen works on landscape screen
+Action: start the app, click on calculator card view and choose landscape mode on the emulator tools
+Expected result: the screen should change to landscape mode and is scrollable
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if app saved entered values when state changes
+Action: enter values to fields and rotate the screen
+Expected result: values should still be displayed on fields
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if calculator is working properly
+Action: enter values: target blood glucose level value - 5; Blood Test Result - 15; Sensitivity Factor - 2 and click calculate.
+Expected result: 5.0 units should be displayed for the user as correction dose is equal to (15-5)/2
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check calculator with different blood test result
+Action: enter 17 to blood test result, Target level - 5; Sensitivity Factor - 2 and click calculate.
+Expected result: (17-5)/2 = 6.0 units
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check calculator with different Sensitivity factor value
+Action: enter 4 to Sensitivity factor field, calculator should round the decimal values
+Expected result: 3.0 units
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check calculator with different Target Blood Glucose value
+Action: enter 7 to Target Blood Glucose field, Blood Test Result - 17; Sensitivity Factor - 4 and click calculate.
+Expected result: 2.0 units
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if fields accept only integer values
+Action: start calculator screen, enter letter/characters
+Expected result: fields should not allow inputs other than integers
+Passed: Yes
+Actual result: As expected

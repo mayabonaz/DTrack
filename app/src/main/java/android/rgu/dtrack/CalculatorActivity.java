@@ -53,6 +53,8 @@ public class CalculatorActivity extends AppCompatActivity {
         calcButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
+
+
                 // get data which is in edit text, convert it to string
                 // using parse Integer convert it to Integer type
                 int num1 = Integer.parseInt(targetNum.getText().toString());
