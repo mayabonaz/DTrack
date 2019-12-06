@@ -29,25 +29,25 @@ Passed: Yes
 Actual result: As expected
 
 Test purpose: check if calculator is working properly
-Action: enter values: target blood glucose level value - 5; Blood Test Result - 15; Sensitivity Factor - 2 and click calculate.
+Action: start calculator screen,enter values: target blood glucose level value - 5; Blood Test Result - 15; Sensitivity Factor - 2 and click calculate.
 Expected result: 5.0 units should be displayed for the user as correction dose is equal to (15-5)/2
 Passed: Yes
 Actual result: As expected
 
 Test purpose: check calculator with different blood test result
-Action: enter 17 to blood test result, Target level - 5; Sensitivity Factor - 2 and click calculate.
+Action: start calculator screen, enter 17 to blood test result, Target level - 5; Sensitivity Factor - 2 and click calculate.
 Expected result: (17-5)/2 = 6.0 units
 Passed: Yes
 Actual result: As expected
 
 Test purpose: check calculator with different Sensitivity factor value
-Action: enter 4 to Sensitivity factor field, calculator should round the decimal values
+Action: start calculator screen, enter 4 to Sensitivity factor field, calculator should round the decimal values
 Expected result: 3.0 units
 Passed: Yes
 Actual result: As expected
 
 Test purpose: check calculator with different Target Blood Glucose value
-Action: enter 7 to Target Blood Glucose field, Blood Test Result - 17; Sensitivity Factor - 4 and click calculate.
+Action: start calculator screen, enter 7 to Target Blood Glucose field, Blood Test Result - 17; Sensitivity Factor - 4 and click calculate.
 Expected result: 2.0 units
 Passed: Yes
 Actual result: As expected
@@ -55,5 +55,11 @@ Actual result: As expected
 Test purpose: check if fields accept only integer values
 Action: start calculator screen, enter letter/characters
 Expected result: fields should not allow inputs other than integers
+Passed: Yes
+Actual result: As expected
+
+Test purpose: check if calculator screen handles calculate button click on empty input fields
+Action: start calculator screen, and click Calculate button
+Expected result: the app should not crash
 Passed: Yes
 Actual result: As expected

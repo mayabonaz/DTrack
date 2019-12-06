@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.text.TextWatcher;
+import android.widget.Toast;
+
 import androidx.appcompat.widget.Toolbar;
 
 
@@ -39,7 +41,7 @@ public class CalculatorActivity extends AppCompatActivity {
         moreInfo = findViewById(R.id.tvMoreInfo);
         result = findViewById(R.id.tvCalcResult);
 
-        //
+        // set TextChange listener for all edit text fields
         targetNum.addTextChangedListener(inputWatcher);
         bloodTestNum.addTextChangedListener(inputWatcher);
         sensitivityNum.addTextChangedListener(inputWatcher);
@@ -53,46 +55,54 @@ public class CalculatorActivity extends AppCompatActivity {
         // launch URL when clicked on text
         moreInfo.setMovementMethod(LinkMovementMethod.getInstance());
 
-
         // get the Calculate button
         calcButton = findViewById(R.id.btnCalculate);
 
         // set the click listener to Calculate button
         calcButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // get data which is in edit text, convert it to string
-                // using parse Integer convert it to Integer type
-                int num1 = Integer.parseInt(targetNum.getText().toString());
-                int num2 = Integer.parseInt(bloodTestNum.getText().toString());
-                int num3 = Integer.parseInt(sensitivityNum.getText().toString());
 
-                // perform calculation store it in corrDose variable
-                double corrDose = (num2 - num1) / num3;
+                try
+                {
+                    // convert to Integer type
+                    int num1 = Integer.parseInt(targetNum.getText().toString());
+                    int num2 = Integer.parseInt(bloodTestNum.getText().toString());
+                    int num3 = Integer.parseInt(sensitivityNum.getText().toString());
 
-                // creating string from calculation result and insulin unit
-                String s = Double.toString(corrDose) + " " + getString(R.string.unit);
+                    // perform calculation store it in corrDose variable
+                    double corrDose = (num2 - num1) / num3;
 
-                // setting calculation result string to result Text View
-                result.setText(s);
+                    // creating string from calculation result and insulin unit
+                    String s = Double.toString(corrDose) + " " + getString(R.string.unit);
+
+                    // setting calculation result string to result Text View
+                    result.setText(s);
+                }
+                catch (NumberFormatException ex)
+                {
+                    Toast.makeText(getApplicationContext(), getString(R.string.toastText), Toast.LENGTH_LONG).show();
+
+                }
+
             }
 
         });
     }
 
-    // Textchange listener for all edit text fields
+    //
     private TextWatcher inputWatcher = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
         }
 
+        // method is called when text input added or removed from edit text views
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
             String targetNumInput = targetNum.getText().toString().trim();
             String bloodTestNumInput = bloodTestNum.getText().toString().trim();
             String sensitivityNumInput = sensitivityNum.getText().toString().trim();
 
-            // enable calculate button only if edit texts are not empty, 
+            // enable calculate button only if edit texts are not empty,
             calcButton.setEnabled(!targetNumInput.isEmpty() && !bloodTestNumInput.isEmpty() && !sensitivityNumInput.isEmpty());
 
         }

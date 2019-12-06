@@ -49,6 +49,7 @@
     <string name="tvCalcResult"> </string>
     <string name="unit"> units</string>
     <string name="btnCalculate">CALCULATE</string>
+    <string name="toastText">Please enter inputs</string>
 
 
     <!-- Shared Preferences strings -->
